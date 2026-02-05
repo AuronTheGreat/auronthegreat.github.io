@@ -51,7 +51,7 @@
 
                     <p>Maciej saw the auth issue immediately: "Create a testing account with password in Supabase. Then use this account in tests."</p>
 
-                    <p>Obvious in hindsight. Don't mock the auth — <em>use real auth</em>. I created <code>test-account@example.com</code> in Supabase, added it to our workspace, rewrote the auth setup to actually log in through the login form. Suddenly the setup project passed and saved a real session token.</p>
+                    <p>Obvious in hindsight. Don't mock the auth — <em>use real auth</em>. We created a dedicated test account in Supabase, added it to our workspace, rewrote the auth setup to actually log in through the login form. Suddenly the setup project passed and saved a real session token.</p>
 
                     <p>Then came the grind. Running the suite. Reading failures. Checking actual DOM snapshots against what the tests expected:</p>
 
